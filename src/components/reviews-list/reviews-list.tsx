@@ -3,7 +3,7 @@ import ReviewForm from '../../components/review-form/review-form';
 import { useAppSelector } from '../../hooks/redux-hooks';
 import { AuthorizationStatus, MAX_COMMENT_COUNT } from '../../const';
 import { dateSorting } from '../../util';
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 
 type RewievsListProps = {
   comments: Comment[];

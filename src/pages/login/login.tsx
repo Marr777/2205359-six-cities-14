@@ -26,9 +26,9 @@ export default function Login (): JSX.Element {
 
     if (loginRef.current !== null && passwordRef.current !== null) {
       if (!passwordRegex.test(passwordRef.current.value) && passwordAlertRef.current !== null) {
-        passwordAlertRef.current.textContent = 'Пароль должен состоять минимум из одной буквы и цифры';
+        passwordAlertRef.current.textContent = 'The password must contain at least one character and a number';
       } else if (!emailRegex.test(loginRef.current.value) && emailAlertRef.current !== null) {
-        emailAlertRef.current.textContent = 'Введите правильный e-mail';
+        emailAlertRef.current.textContent = 'Enter the correct e-mail';
       } else {
         dispatch(loginAction({
           login: loginRef.current.value,
