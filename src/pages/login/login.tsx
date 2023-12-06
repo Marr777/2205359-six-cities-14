@@ -26,7 +26,7 @@ export default function Login (): JSX.Element {
 
     if (loginRef.current !== null && passwordRef.current !== null) {
       if (!passwordRegex.test(passwordRef.current.value) && passwordAlertRef.current !== null) {
-        passwordAlertRef.current.textContent = 'The password must contain at least one character and a number';
+        passwordAlertRef.current.textContent = 'The password must contain at least one latin character and a number';
       } else if (!emailRegex.test(loginRef.current.value) && emailAlertRef.current !== null) {
         emailAlertRef.current.textContent = 'Enter the correct e-mail';
       } else {
